@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_attendance"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Attendance" />
+    <item
+        android:id="@+id/nav_materials"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Materials" />
+    <item
+        android:id="@+id/nav_assignments"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Assignments" />
+    <item
+        android:id="@+id/nav_marks"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Marks" />
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@android:drawable/ic_popup_reminder"
+        android:title="Alerts" />
+</menu>

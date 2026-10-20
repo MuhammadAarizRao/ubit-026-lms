@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/cream_card_bg"
+    android:padding="14dp"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/notifCourseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:background="@drawable/maroon_pill_button"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="OOP" />
+
+        <TextView
+            android:id="@+id/notifTypeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="#B85C38"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="Quiz Alert" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notifMessageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#3E2E2E"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:text="Message goes here" />
+
+    <TextView
+        android:id="@+id/notifTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_muted"
+        android:textSize="11sp"
+        android:layout_marginTop="6dp"
+        android:text="10 min ago" />
+
+</LinearLayout>

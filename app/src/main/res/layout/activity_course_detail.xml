@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cream_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/maroon_header_rounded"
+        android:padding="20dp"
+        android:paddingBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/courseBackButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle_translucent_bg"
+                android:src="@drawable/ic_back_arrow"
+                android:contentDescription="Back"
+                app:tint="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course Panel"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/courseDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="serif"
+            android:text="Course Name"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="14dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chatWithCrButton"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:stateListAnimator="@null"
+            android:text="Chat CR"
+            android:textAllCaps="false"
+            android:textColor="@color/maroon_primary"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="#E7DFD0"
+            app:cornerRadius="22dp"
+            app:icon="@drawable/ic_chat_1on1"
+            app:iconGravity="textStart"
+            app:iconPadding="4dp"
+            app:iconSize="16dp"
+            app:iconTint="@color/maroon_primary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chatWithGrButton"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:stateListAnimator="@null"
+            android:text="Chat GR"
+            android:textAllCaps="false"
+            android:textColor="@color/maroon_primary"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="#E7DFD0"
+            app:cornerRadius="22dp"
+            app:icon="@drawable/ic_chat_1on1"
+            app:iconGravity="textStart"
+            app:iconPadding="4dp"
+            app:iconSize="16dp"
+            app:iconTint="@color/maroon_primary" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/chatGroupButton"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
+            android:stateListAnimator="@null"
+            android:text="Group Chat"
+            android:textAllCaps="false"
+            android:textColor="@color/maroon_primary"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:backgroundTint="#E7DFD0"
+            app:cornerRadius="22dp"
+            app:icon="@drawable/ic_chat_group"
+            app:iconGravity="textStart"
+            app:iconPadding="4dp"
+            app:iconSize="16dp"
+            app:iconTint="@color/maroon_primary" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/courseFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/courseBottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/card_cream"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu_teacher" />
+
+</LinearLayout>

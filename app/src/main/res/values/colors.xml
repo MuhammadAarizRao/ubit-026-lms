@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ubit_blue">#1565C0</color>
+    <color name="maroon_primary">#7A1F35</color>
+    <color name="maroon_dark">#5C1628</color>
+    <color name="navy_text">#2C3E50</color>
+    <color name="soft_pink_bg">#F7E3E3</color>
+    <color name="cream_bg">#F0E9DC</color>
+    <color name="card_cream">#FDFBF7</color>
+    <color name="text_muted">#6B5B5B</color>
+
+</resources>
